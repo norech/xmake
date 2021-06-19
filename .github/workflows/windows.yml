@@ -59,6 +59,6 @@ jobs:
           xmake show
           #xmake l -v private.utils.bcsave --rootname='@programdir' -x 'scripts/**|templates/**' xmake
           xmake lua -v -D tests/run.lua
-          xrepo install -D "openssl 1.1.1-k"
+          xrepo install -y -D "openssl 1.1.1-k"
           xrepo export -o output openssl --shallow "1.1.1-k"
 
